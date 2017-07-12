@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="videodemo.css">
+  <link rel="stylesheet" href="animations.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono|Space+Mono|Ubuntu" rel="stylesheet">
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script>
+	$(window).scroll(function() {
+		$('.img').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+400) {
+				$(this).addClass("slideRight");
+			}
+		});
+	});
+</script>
+
+
+</head>
+<body>
+  <div id="wrapper">
+  <audio autoplay loop>
+<source src="Crackle_01.wav" type="audio/wav">
+  <!--<source src="johann_sebastian_bach_air.mp3" type="audio/mpeg">-->
+Vinyl noise for the turntable
+</audio>
+
+<video playsinline autoplay muted loop>
+     <source src="Turntable.mp4" type="video/mp4">
+    <source src="Turntable.mp4" type="video">
+    Your browser does not support the video tag. I suggest you upgrade your browser.
+</video>
+
+<header>
+  <nav>
+    <a target="_blank" href="#text">Identity</a>
+    <a href="#">Auralytics</a>
+    <a href="#">Sightings</a>
+    <a href="#">Products</a>
+  </nav>
+</header>
+
+<div class="overlay">
+   <h1>Lord Pyro</h1>
+</div>
+
+<div class="img slideLeft"><img class="textwrap" src="DJLPsmall.jpg">
+<div class="bio">
+  <p>Lord Pyro is a DJ/Producer from the 7th Galaxy descendent from a long line of musical Pharoahs living in Austin TX.</p>
+
+<p>He has opened for Arc Attack, and has had a one man show at the Alamo Drafthouse Cinema complete with 90 minute video.</p>
+
+<p>His sets include Live Improvisatory PA, along with DJ controllerism with a range that includes Tech House, Deep House, Future House, and Bass Music. His influences range from world beat to synth-pop</p>
+
+<p>He has shared the decks with Dj's from Opulent Temple, and The DO Lab.
+Selected DJ Performances Include:
+Burning Man, SXSW, Austin Fashion Week</p>
+          </div>
+        </div>
+
+    <div class="footer">
+              <div class="navbar-text pull-right">
+              <a href="https://www.facebook.com/lord.pyro.1"><i class="fa fa-facebook-square fa-2x" style="color:white"></i></a>
+              <a href="#"><i class="fa fa-twitter fa-2x" style="color:white"></i></a>
+              <a href="#"><i class="fa fa-google-plus fa-2x" style="color:white"></i></a>
+                 </div>
+                 <div class="text">
+                <p>Email: lordpyro@gmail.com</p>
+                <p>Twitter: Lordpyro7</p>
+                <p>Facebook:Dj Lord Pyro</p>
+                <p>(512)720-2723</p>
+                </div>
+                <div class="webmaster">
+                <p>Website By Urban Mystic Design</p>
+                </div>
+              </div>
+              </div>
+
+
+</body>
+</html>
